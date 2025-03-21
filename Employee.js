@@ -9,3 +9,33 @@ if(isPresent == present){
 else{
     console.log("Employee is not Present");
 }
+
+//UC-2
+//calculating dailywage of an employee without a function
+let workingHours = Math.floor(Math.random()*10)%3;
+
+const isPartTime = 1;
+const isFullTime = 2;
+const partTime = 4;
+const fullTime = 8;
+const wagePerHour = 20;
+
+switch(workingHours){
+
+    case isPartTime:
+        workingHours = partTime;
+        break;
+
+    case isFullTime:
+        workingHours = fullTime;
+        break;
+
+    default :
+        workingHours = 0;
+        break;
+
+}
+
+let wage = wagePerHour*workingHours;
+
+console.log("Daily wage generated for employee is ",wage);
